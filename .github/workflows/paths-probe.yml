@@ -1,0 +1,9 @@
+name: paths-probe
+on:
+  pull_request:
+    paths: ['never-touched/**']
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "paths-filtered workflow ran"

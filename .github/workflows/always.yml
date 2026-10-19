@@ -1,0 +1,7 @@
+name: always
+on: pull_request
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "unfiltered control workflow ran"
